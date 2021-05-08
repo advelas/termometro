@@ -4,25 +4,23 @@ let datoP=[];
 let datoN=[];
 
 function tomarDato(){
-let entrada= parseInt(prompt(`Día ${registro} de ${mes}. ¿Cual es la temperatura de hoy?`));
+	let entrada= parseInt(prompt(`Día ${registro} de ${mes}. ¿Cual es la temperatura de hoy?`));
 
-if (entrada >= 0) {
-datoP.push(entrada);
-entrada=0;
-} else {
-datoN.push(entrada);
-entrada=0;
-}
+		if (entrada >= 0) {
+			datoP.push(entrada);
+		} else {
+			datoN.push(entrada);
+			}
 
-registro = (registro+1);
-}
+	registro++;
+	}
 
 do {
 	tomarDato()
 } while(registro<=mes);
 
-let suma = datoN.reduce((current, previous) => current += previous);
-let promedio = suma / datoN.length;
+let suma= datoN.reduce((current, previous) => current += previous);
+let promedio= suma / datoN.length;
 let tempMinima= Math.min.apply(null, datoN);
 let tempMaxima= Math.max.apply(null, datoP);
 
