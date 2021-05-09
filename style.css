@@ -1,6 +1,35 @@
+body{
+    background-color: #191e2e;
+    display:flex;
+    justify-content: center;
+}
+
 .mainContainer{
-width: 35rem;
-height: 35rem;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 24rem;
+height: 26.8rem;
 border-style: solid;
-border-color: red;
+border-color: lightsteelblue;
+border-radius: .4em;
+font-size: .74em;
+background-color: #2e2f36;
+flex-wrap: wrap;
+}
+
+.flexItem{
+    padding: 3px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: lightslategrey;
+}
+
+.flexFooter{
+    color: lightslategrey;
+    font-size: .8em;
+    align-self: flex-end;
+}
+
+h1{
+    font-size: 1.8em;
 }
